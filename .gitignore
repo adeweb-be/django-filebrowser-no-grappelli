@@ -7,6 +7,7 @@ dist
 fabfile.py
 NOTES.md
 .tox/*
+.idea/
 
 /envs
 /projects

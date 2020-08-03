@@ -2,12 +2,13 @@
 <thead>
     <tr>
         <!-- ACTIONS -->
-        {% comment %}{% if not query.pop %}<th><input type="checkbox" id="action-toggle"></th>{% endif %}{% endcomment %}
+        {% if not query.pop %}<th></th>{% endif %}
         <!-- SELECT -->
         {% if query.pop == "1" %}<th></th>{% endif %}
         {% if query.pop == "2" %}<th></th>{% endif %}
         {% if query.pop == "3" %}<th></th>{% endif %}
         {% if query.pop == "4" %}<th></th>{% endif %}
+        {% if query.pop == "5" %}<th></th>{% endif %}
         <!-- FILETYPE -->
         {% if query.o == "filetype" %}
         <th scope="col" class="sortable sorted {{ query.ot }}ending">
